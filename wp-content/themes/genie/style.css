@@ -18,6 +18,6 @@ All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
     text-align: center;
 }
 
-.html.boldFixedHeader {
+html.boldFixedHeader {
 	padding: 0px !important;
 }
