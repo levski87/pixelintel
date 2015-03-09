@@ -296,9 +296,10 @@ if ( have_posts() ) {
 			}					
 			echo '</div><!-- /articleBody -->';
 			wp_link_pages( array( 
-				'before'      => '<p class="btLinkPages">' . __( 'Pages:', 'bt_theme' ),
+				'before'      => '<div class="btLinkPages">' . __( '', 'bt_theme' ),
 				'separator'   => ' ',
-				'after'       => '</p>'
+				'next_or_number' => 'next',
+				'after'       => '</div>'
 			));			
 			echo $about_author_html . '
 			<footer>
