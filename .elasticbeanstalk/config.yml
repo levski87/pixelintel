@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: pixelintel-live
+global:
+  application_name: PIXELintel
+  default_ec2_keyname: scc-tech
+  default_platform: 64bit Amazon Linux 2014.09 v1.2.0 running PHP 5.5
+  default_region: us-east-1
+  profile: eb-cli
+  sc: git
