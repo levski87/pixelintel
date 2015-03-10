@@ -2,6 +2,13 @@
 
 get_header();
 
+?>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54fe540e443baec1" async="async"></script>
+
+<?php
+
 if ( have_posts() ) {
 	
 	while ( have_posts() ) {
