@@ -5,6 +5,7 @@ if ( post_password_required() ) {
 }
 ?>
 
+<?php /*
 <div id="comments" class="commentsBox">
 
 	<?php if ( have_comments() ) : ?>
@@ -105,6 +106,5 @@ if ( post_password_required() ) {
 		  'fields' => apply_filters( 'comment_form_default_fields', $fields ),
 		);
 		comment_form( $args );
-	?>
-
+	*/ ?>
 </div><!-- #comments -->
