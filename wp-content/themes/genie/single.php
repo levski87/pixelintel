@@ -9,6 +9,10 @@ get_header();
 
 <?php
 
+global $page, $pages, $numpages;
+
+$maxpages = $wp_query->max_num_pages;
+
 if ( have_posts() ) {
 	
 	while ( have_posts() ) {
@@ -302,12 +306,37 @@ if ( have_posts() ) {
 				echo '</blockquote>';
 			}					
 			echo '</div><!-- /articleBody -->';
-			wp_link_pages( array( 
-				'before'      => '<div class="btLinkPages">' . __( '', 'bt_theme' ),
-				'separator'   => ' ',
-				'next_or_number' => 'next',
-				'after'       => '</div>'
-			));			
+			
+		 if ($numpages > 1)  { ?>
+   				 <div class="page-link-container" style="text-align: center !important;">
+        	<?php
+        // This shows the Previous link
+        wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">',
+                              'previouspagelink' => '<span class="previous">Back</span>', 
+                              'nextpagelink' => '',
+                              'next_or_number' => 'next',
+                              'after' => '</div>', 
+                               ) );
+       		 ?>
+
+        <div class="page-count" style="display: inline-block !important;">
+
+            <?php echo( $page.' of '.count($pages) ); ?>
+
+        </div>
+        <?php
+        // This shows the Next link
+        wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">',  
+        					  'previouspagelink' => '',
+                              'nextpagelink' => 
+                              '<span class="next">Next</span>', 
+                              'next_or_number' => 'next',
+                              'after' => '</div>', 
+                              ) );
+        ?>
+    </div>
+<?php }
+	
 			echo $about_author_html . '
 			<footer>
 				' . $tags_html . '

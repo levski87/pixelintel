@@ -17,3 +17,125 @@ All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
 .btLinkPages {
     text-align: center;
 }
+
+
+
+.page-links {
+  text-align: center;
+}
+
+
+.page-count {
+  font-size: 30px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 400px) {
+  .page-links a { 
+    width:49%;
+    font-size: 14px !important; 
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .page-links a {
+    width:49%;
+    font-size: 16px !important;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+  }
+}
+
+
+.next {
+  width:30%;
+  background-color: #3accc3 !important;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  font-size: 28px;
+}
+
+
+.next {
+  width:30%;
+  background-color: #3accc3 !important;
+  padding: 10px 75px;
+  border-radius: 10px;
+  color: white;
+  font-size: 28px;
+}
+
+.page-link-nextprev a:hover {
+  color: white;
+}
+
+.previous {
+  /* width:33%; */
+  background-color: #3accc3 !important;
+  padding: 10px 75px;
+  border-radius: 10px;
+  color: white;
+  font-size: 28px;
+}
+
+ 
+@media (min-width: 460px) and (max-width: 600px) {
+  .next { 
+    font-size: 24px !important;
+    padding:10px 55px;
+        }
+  .previous { 
+    font-size:24px !important;
+    padding:10px 55px;
+      }
+  .page-count { 
+    font-size: 24px !important; }
+
+}
+
+
+@media (max-width: 350px) {
+  .previous { 
+    font-size: 14px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+     padding-bottom: 15px;
+    padding-top: 15px;
+        }
+  .next {
+    font-size: 14px !important;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 20px;
+
+  }
+  .page-count {
+    font-size:14px !important;
+  }
+
+  .page-link-container {
+    padding-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 351px) and (max-width: 460px) {
+   .next { 
+    font-size: 20px !important;
+   	padding: 10px 30px;
+        }
+  .previous { 
+    font-size:20px !important;
+    padding: 10px 30px;
+      }
+  .page-count { 
+    font-size: 18px !important; }
+
+}
