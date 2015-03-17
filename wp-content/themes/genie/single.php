@@ -9,8 +9,15 @@ get_header();
 
 <?php
 
+/* Global Variables for Page Count */ 
+
 global $page, $pages, $numpages;
 
+
+/* User Agent */
+$userAgents = new Mobile_Detect();
+
+/* Maximum Pages */
 $maxpages = $wp_query->max_num_pages;
 
 if ( have_posts() ) {
@@ -335,11 +342,20 @@ if ( have_posts() ) {
                               ) );
         ?>
     </div>
-<?php }
+<?php } ?>
+
+	    <div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px;">
+        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
+            .get_permalink()); ?>" target="_blank">
+            <span data-icon="&#xf09a;"></span> Share on Facebook
+        </a>
+    </div>
+
+<?php
 	
 			echo $about_author_html . '
 			<footer>
-				' . $tags_html . '
+				' . $tags_html . '	
 				<div class="socialsRow">
 					' . $share_html . '
 				</div><!-- /socialsRow -->

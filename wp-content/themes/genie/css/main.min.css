@@ -1019,8 +1019,8 @@ p.loud {
     padding: 0;
 }
 
-.classic footer {
-	margin-top: 38px;
+.classic footer 
+/*	margin-top: 38px; */
 }
 
 .classic footer .continue {
