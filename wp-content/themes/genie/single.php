@@ -344,7 +344,7 @@ if ( have_posts() ) {
     </div>
 <?php } ?>
 
-	    <div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px;">
+	    <div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px; text-align: center !important;">
         <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
             .get_permalink()); ?>" target="_blank">
             <span data-icon="&#xf09a;"></span> Share on Facebook
