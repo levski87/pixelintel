@@ -20,6 +20,8 @@ $userAgents = new Mobile_Detect();
 /* Maximum Pages */
 $maxpages = $wp_query->max_num_pages;
 
+render_partial('partials/ads-atf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]);
+
 if ( have_posts() ) {
 	
 	while ( have_posts() ) {

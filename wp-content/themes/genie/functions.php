@@ -1,5 +1,34 @@
 <?php
 
+
+
+/** Render Partial Data **/ 
+function render_partial( $partial, $data = array() ) {
+
+    // Turn data array keys
+    extract($data);
+
+    // Add .php extension to partial names without one
+    $ext = pathinfo($partial, PATHINFO_EXTENSION);
+    if (!$ext) {
+        $partial = $partial . '.php';
+    }
+
+    // Attempt default locate on partial for full paths
+    $include = locate_template( $partial );
+
+    // Search partials directory if none is found
+    if (!$include) {
+        $include = locate_template( 'partials/' . $partial );
+    }
+
+    if ($include) {
+        include( $include );
+    }
+
+}
+
+
 if ( ! defined( 'BTPFX' ) ) {
 	define( 'BTPFX', 'bt_theme' );
 }
