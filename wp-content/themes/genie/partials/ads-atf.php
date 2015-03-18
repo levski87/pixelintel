@@ -1,7 +1,6 @@
 <?php // MOBILE ADs ?>
 <?php if ($userAgents->isMobile() && ($page < $numpages) && !$userAgents->isTablet()) : ?>
     <!-- Size: 300x100 || 320x50 -->
-    <!-- Supercraycracy_mobile_top -->
     <div style="text-align: center;">
         <div style="display: inline-block;">
         <div id="div-gpt-ad-1415463844615-0">
