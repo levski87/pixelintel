@@ -353,6 +353,9 @@ if ( have_posts() ) {
         </a>
     </div>
 
+    <?php render_partial('partials/ads-btf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]); ?>
+
+
 <?php
 	
 			echo $about_author_html . '

@@ -1,5 +1,5 @@
 <?php // MOBILE ADs below arrows ?>
-<?php if ($userAgent->isMobile() && !$userAgent->isTablet() && ($page < $numpages)) : ?>
+<?php if ($userAgents->isMobile() && !$userAgents->isTablet() && ($page < $numpages)) : ?>
     <!-- Size: 336x280 -->
     <!-- 336x280 -->
     <div style="text-align: center;">
@@ -18,12 +18,12 @@
      </div>
 
     <?php // TABLET ADs below arrows ?>
-<?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
+<?php elseif ($userAgents->isTablet() && ($page < $numpages)) : ?>
     <!-- Size: 336x280 -->
     <!-- 336x280 -->
     <div style="text-align: center;">
         <div style="display: inline-block;">
-            <div style="font-size: 10px;">Advertisement</div>
+            <div style="font-size: 12px;">Advertisement</div>
            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- 336x280 -->
             <ins class="adsbygoogle"
@@ -42,7 +42,7 @@
     <!-- 336x280 -->
     <div style="text-align: center;">
         <div style="display: inline-block;">
-            <div style="font-size: 10px;">Advertisement</div>
+            <div style="font-size: 12px;">Advertisement</div>
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- 336x280 -->
                 <ins class="adsbygoogle"
