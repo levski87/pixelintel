@@ -277,6 +277,7 @@ if ( have_posts() ) {
 		if ( has_post_thumbnail() && $bt_featured_slider ) {
 			echo '<div id="content" class="content tpost">';
 		} else {
+			render_partial('partials/ads-atf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]);
 			echo '<div id="content" class="content">';
 		}
 		echo '<div class="gutter">';
