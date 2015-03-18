@@ -42,6 +42,7 @@ if ( bt_get_option( 'sticky_header' ) ) {
 <html class="no-js<?php echo $html_class; ?>" <?php language_attributes(); ?>>
 <head>
 
+<meta name="google-site-verification" content="69v6uRanZ0y73l9HgMy49mTage6hs2D0pytoGCu9Apo" />
     <title><?php wp_title( '' ); ?></title>
 	
 	<?php
