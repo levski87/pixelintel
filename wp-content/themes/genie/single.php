@@ -4,6 +4,20 @@ get_header();
 
 ?>
 
+
+<div class="TopAd"
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4049798989734696"
+     data-ad-slot="3958695161"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54fe540e443baec1" async="async"></script>
 
@@ -19,8 +33,6 @@ $userAgents = new Mobile_Detect();
 
 /* Maximum Pages */
 $maxpages = $wp_query->max_num_pages;
-
-render_partial('partials/ads-atf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]);
 
 if ( have_posts() ) {
 	
@@ -277,7 +289,6 @@ if ( have_posts() ) {
 		if ( has_post_thumbnail() && $bt_featured_slider ) {
 			echo '<div id="content" class="content tpost">';
 		} else {
-			render_partial('partials/ads-atf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]);
 			echo '<div id="content" class="content">';
 		}
 		echo '<div class="gutter">';
@@ -350,12 +361,9 @@ if ( have_posts() ) {
 	    <div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px; text-align: center !important;">
         <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
             .get_permalink()); ?>" target="_blank">
-            <span data-icon="&#xf09a;"></span> Share on Facebook
+            <i class="fa fa-facebook-official"></i> Share on Facebook
         </a>
     </div>
-
-    <?php render_partial('partials/ads-btf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]); ?>
-
 
 <?php
 	

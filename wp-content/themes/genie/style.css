@@ -144,24 +144,21 @@ All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
 
 /* Social Share Buttn */
 
-
 .sswpds-social-wrap a {
   display: inline-block;
   -webkit-box-sizing: border-box; 
   -moz-box-sizing: border-box; 
   -o-box-sizing: border-box; 
   box-sizing: border-box;
+  margin-right: 10px;
   text-decoration: none !important;
-  color: #3accc3 !important;
-  background-color: #fff !important;
-  width: 66% !important;
+  color: white !important;
+  background-color: #3b5998 !important;
+  width: 100% !important;
   font-size: 25px !important;
-  border: 1px solid #3accc3 !important;
-}
-
-.sswpds-social-wrap a:hover {
-	background-color: #3accc3 !important;
-	color: #fff !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-radius: 40px;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
@@ -173,11 +170,14 @@ All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
   box-sizing: border-box;
   margin-right: 10px;
   text-decoration: none !important;
-  color: #3accc3 !important;
-  background-color: #fff !important;
+  color: white !important;
+  background-color: #3b5998 !important;
   width: 100% !important;
   font-size: 25px !important;
   line-height:40px !important;
+    padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-radius: 40px;
 }
 }
 
@@ -191,20 +191,12 @@ All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
   margin-right: 10px;
   text-decoration: none !important;
   color: white !important;
-  background-color: #fff !important;
+  background-color: #3b5998 !important;
   width: 100% !important;
   font-size: 20px !important;
   line-height:40px !important;
+    padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-radius: 40px;
 }
 }
-
-.sswpds-social-wrap span:hover {
-	color: white !important;
-	color: #3accc3;
-}
-
-.sswpds-social-wrap span {
-	padding-right: 10px;
-}
-
-

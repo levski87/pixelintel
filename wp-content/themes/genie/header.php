@@ -41,7 +41,7 @@ if ( bt_get_option( 'sticky_header' ) ) {
 <!DOCTYPE html>
 <html class="no-js<?php echo $html_class; ?>" <?php language_attributes(); ?>>
 <head>
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <meta name="google-site-verification" content="69v6uRanZ0y73l9HgMy49mTage6hs2D0pytoGCu9Apo" />
     <title><?php wp_title( '' ); ?></title>
 	
