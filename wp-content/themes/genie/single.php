@@ -5,19 +5,6 @@ get_header();
 ?>
 
 
-<div class="TopAd"
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 728x90 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-4049798989734696"
-     data-ad-slot="3958695161"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54fe540e443baec1" async="async"></script>
 
@@ -302,6 +289,10 @@ if ( have_posts() ) {
 				dynamic_sidebar( 'primary_widget_area' );
 			echo '</aside><!-- /side -->';
 			echo '<section class="main column narrow" role="main"><h2>main</h2>';
+
+
+			render_partial('partials/ads-atf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]);
+		
 			$class_array = array( 'classic' );
 		} else {
 			echo '<section class="main column wide" role="main"><h2>main</h2>';
@@ -364,6 +355,8 @@ if ( have_posts() ) {
             <i class="fa fa-facebook-official"></i> Share on Facebook
         </a>
     </div>
+
+<?php render_partial('partials/ads-btf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]); ?>
 
 <?php
 	
