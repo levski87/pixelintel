@@ -128,7 +128,21 @@ if ( have_posts() ) {
 		}
 
 		global $date_format;
+?>
+
 		
+<div class="TopAd" style="text-align:center; margin-top:20px;">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4049798989734696"
+     data-ad-slot="3958695161"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<?php
 		$content_html = apply_filters( 'the_content', get_the_content( '', false ) );
 		$content_html = str_replace( ']]>', ']]&gt;', $content_html );
 		
@@ -291,7 +305,6 @@ if ( have_posts() ) {
 			echo '<section class="main column narrow" role="main"><h2>main</h2>';
 
 
-			render_partial('partials/ads-atf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]);
 		
 			$class_array = array( 'classic' );
 		} else {
@@ -356,7 +369,6 @@ if ( have_posts() ) {
         </a>
     </div>
 
-<?php render_partial('partials/ads-btf', ['page' => $page, 'numpages' => $numpages, 'userAgents' => $userAgents]); ?>
 
 <?php
 	
