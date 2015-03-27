@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /wp-admin
+Disallow: /?p=675
+Disallow: /?p=654
+Disallow: /?p=628
+Disallow: /?p=614
+Disallow: /?p=516
+Disallow: /?p=467
+Disallow: /?p=460
