@@ -7,3 +7,4 @@ Disallow: /?p=614
 Disallow: /?p=516
 Disallow: /?p=467
 Disallow: /?p=460
+Disallow: /?p=690
