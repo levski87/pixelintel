@@ -1,5 +1,5 @@
 <?php
-define('WP_CACHE', true);
+define('WP_CACHE', false);
 define('FS_METHOD', 'direct' );
 /*
 |--------------------------------------------------------------------------
