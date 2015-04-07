@@ -1,5 +1,5 @@
 <?php // MOBILE ADs ?>
-<?php if ($userAgents->isMobile() && ($page < $numpages) && !$userAgents->isTablet()) : ?>
+<?php if ($userAgents->isMobile() && ($page <= $numpages) && !$userAgents->isTablet()) : ?>
     <!-- Size: 300x100 || 320x50 -->
     <div style="text-align: center;">
         <div style="display: inline-block;">
@@ -18,7 +18,7 @@
         </div>
     </div>
     <?php // TABLET ADs ?>
-<?php elseif ($userAgents->isTablet() && ($page < $numpages)) : ?>
+<?php elseif ($userAgents->isTablet() && ($page <= $numpages)) : ?>
     <!-- Size: 728x90 -->
     <!-- leaderboard -->
     <div style="text-align: center;">
@@ -37,7 +37,7 @@
                 </div>
             </div>
     <?php // DESKTOP ADs ?>
-<?php elseif ($page < $numpages) :?>
+<?php elseif ($page <= $numpages) :?>
     <!-- Size: 728x90 -->
     <!-- leaderboard -->
     <div style="text-align: center;">
