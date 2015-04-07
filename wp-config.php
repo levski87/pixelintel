@@ -1,5 +1,5 @@
 <?php
-define('WP_CACHE', false);
+define('WP_CACHE', true);
 define('FS_METHOD', 'direct' );
 /*
 |--------------------------------------------------------------------------
@@ -111,12 +111,19 @@ $table_prefix  = 'wp_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
+define('WP_AUTO_UPDATE_CORE', false);
 
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
+
+$memcached_servers = array(
+    'default' => array(
+       $_ENV['MEMCACHED_NODE_ONE'],
+    )
+);
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
