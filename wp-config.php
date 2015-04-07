@@ -18,7 +18,7 @@ $environments = array(
         'kirill',
         'Denis-PC',
         'kirillMac.local',
-	'denis-Lenovo-Yoga-2-Pro',
+	    'denis-Lenovo-Yoga-2-Pro',
         'denis-Inspiron-N5110',
     ),
 );
@@ -111,7 +111,6 @@ $table_prefix  = 'wp_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
-define('WP_AUTO_UPDATE_CORE', false);
 
 /* That's all, stop editing! Happy blogging. */
 
