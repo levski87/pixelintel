@@ -4,7 +4,7 @@
     <div style="text-align: center;">
         <div style="display: inline-block;">
         <div id="div-gpt-ad-1415463844615-0">
-            <div style="font-size: 12px;">Advertisement
+            <div style="font-size: 12px;"><strong>Advertisement</strong>
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- 300x250 -->
         <ins class="adsbygoogle"
@@ -23,7 +23,7 @@
     <!-- leaderboard -->
     <div style="text-align: center;">
         <div style="display: inline-block;">
-            <div style="font-size: 12px;">Advertisement
+            <div style="font-size: 12px;"><strong>Advertisement</strong>
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- 728x90 -->
                     <ins class="adsbygoogle"
@@ -42,7 +42,7 @@
     <!-- leaderboard -->
     <div style="text-align: center;">
         <div style="display: inline-block;">
-            <div style="font-size: 12px;">Advertisement
+            <div style="font-size: 12px;"> <strong>Advertisement </strong>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 728x90 -->
 <ins class="adsbygoogle"
