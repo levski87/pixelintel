@@ -1,6 +1,5 @@
 <?php
 define('WP_CACHE', true);
-define('FS_METHOD', 'direct' );
 /*
 |--------------------------------------------------------------------------
 | Detect The Application Environment
@@ -18,8 +17,8 @@ $environments = array(
         'kirill',
         'Denis-PC',
         'kirillMac.local',
-	    'denis-Lenovo-Yoga-2-Pro',
         'denis-Inspiron-N5110',
+        'denis-Lenovo-Yoga-2-Pro',
     ),
 );
 
@@ -84,14 +83,14 @@ define( 'AWS_SECRET_ACCESS_KEY', $_ENV['AWS_SECRET_KEY']);
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'K.0n6$Ghu{(-V=8-Np}z|(7K;x86^mU38Ye~2FL+X<pS?oI.G9*81dIx_`kb[P+#');
+define('SECURE_AUTH_KEY',  'gN[U-FImUGMEK}Ed.-I31iI%^I2T*B|!q1t~VI+f-C*^ Ba-ENMct[+{}m9L.Vah');
+define('LOGGED_IN_KEY',    '#FI0ho||DQVg$*^Ra8klo;&W5@6.}R0jQ{N2hXXx44P>ax(F+x<VH%b;w5gH<oPB');
+define('NONCE_KEY',        '=c5JfH6=7N]5xoa)FEdwmmeF}G0`?QJq;*p1}-C F3/SqL0Y;FQ:H|W:LzaH|%pp');
+define('AUTH_SALT',        'NkkVF||B(dSjS-eMic{x_;moYA<Y z`LvjPE_E_8xep?}|z-L9zH63d3F)G+T@h#');
+define('SECURE_AUTH_SALT', '*<;s[45H7*ef TG+K?|%<9O;&c/@Z.j>{}RT9R~P6o1>k*SZ-;A1*SBT!q2htj@4');
+define('LOGGED_IN_SALT',   'Q_qqzkJE/5ofn{SQ%9AFMxMfCFKw$%3+d7oL8>!l+o-QTIYi~ q4vGC}bhlf%1*}');
+define('NONCE_SALT',       'P0Yr|bI8XgtXZ1W1~h]hw^:#80-, ?eDb52LWr>5|#VJ26:-od~&:Q5Tq^]t7#~b');
 
 /**#@-*/
 
@@ -104,19 +103,41 @@ define('NONCE_SALT',       'put your unique phrase here');
 $table_prefix  = 'wp_';
 
 /**
+ * WordPress Localized Language, defaults to English.
+ *
+ * Change this to localize WordPress. A corresponding MO file for the chosen
+ * language must be installed to wp-content/languages. For example, install
+ * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
+ * language support.
+ */
+define('WPLANG', '');
+
+/**
  * For developers: WordPress debugging mode.
  *
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
-/* That's all, stop editing! Happy blogging. */
+/**
+ * Disable all automatic updates
+ */
+define('AUTOMATIC_UPDATER_DISABLED', true);
 
-/** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+/**
+ * This will block users being able to use the plugin and theme installation/update
+ * functionality from the WordPress admin area. Setting this constant also disables
+ * the Plugin and Theme editor (i.e. you don't need to set DISALLOW_FILE_MODS and
+ * DISALLOW_FILE_EDIT, as on its own DISALLOW_FILE_MODS will have the same effect).
+ */
+define('DISALLOW_FILE_MODS', true);
+
+/**
+ * Disable all core updates:
+ */
+define('WP_AUTO_UPDATE_CORE', false);
 
 $memcached_servers = array(
     'default' => array(
@@ -124,9 +145,14 @@ $memcached_servers = array(
     )
 );
 
-/** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
-
-
 require_once(ABSPATH . 'Mobile_Detect.php');
 $mobileDetect = new Mobile_Detect();
+
+/* That's all, stop editing! Happy blogging. */
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+    define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
