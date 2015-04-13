@@ -34,6 +34,7 @@
 
     })
 
+/*
     enquire.register("screen and (min-width: 0px) and (max-width: 740px)", {
 
         match: function () {
@@ -64,5 +65,5 @@
         }
 
     })
-
+*/
 })( jQuery );
