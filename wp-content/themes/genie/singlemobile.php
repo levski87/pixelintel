@@ -383,7 +383,7 @@ if ($page > 2) : ?>
         <div class="fb-share-button col-xs-7 text-center" style="border-radius: 5px; background-color: #2a5697; padding: 4px 6px; font-size: 23px">
             <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
             .get_permalink()); ?>" id="fb-floating-share" target="_blank">
-                <i class="fa fa-facebook-square"></i> Share
+                <i class="fa fa-facebook-square"></i> Share On Facebook
             </a>
         </div>
     </div>
