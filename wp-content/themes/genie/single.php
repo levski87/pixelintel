@@ -19,8 +19,8 @@ global $page, $pages, $numpages;
 $userAgents = new Mobile_Detect();
 
 if ($userAgents->isMobile()) {
-	include 'singledesktop.php';
+	include 'singlemobile.php';
 }
 else {
-	include 'singlemobile.php';
+	include 'singledesktop.php';
 }
