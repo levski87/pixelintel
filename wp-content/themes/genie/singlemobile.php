@@ -378,7 +378,7 @@ echo '</section><!-- /main -->';
 echo '</div><!-- /gutter -->';
 echo '</div><!-- /content -->';
 
- if ($page > 2) : ?>
+if ($page > 2) : ?>
     <div class="col-md-4 col-xs-12 floating-share-bar">
         <div class="fb-share-button col-xs-7 text-center" style="border-radius: 5px; background-color: #2a5697; padding: 4px 6px; font-size: 23px">
             <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
@@ -389,6 +389,7 @@ echo '</div><!-- /content -->';
     </div>
 <?php endif ?>
 
+<?php
 global $bt_exclude_post;
 $bt_exclude_post = $post_id;
 
