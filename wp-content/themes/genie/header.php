@@ -37,6 +37,7 @@ if ( bt_get_option( 'sticky_header' ) ) {
   ga('send', 'pageview');
 
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <!DOCTYPE html>
 <html class="no-js<?php echo $html_class; ?>" <?php language_attributes(); ?>>

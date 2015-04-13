@@ -384,3 +384,14 @@ $bt_exclude_post = $post_id;
 get_template_part( 'php/slider' );
 
 get_footer();
+
+ if ($page > 3) : ?>
+    <div class="col-md-4 col-xs-12 floating-share-bar">
+        <div class="fb-share-button col-xs-7 text-center" style="border-radius: 5px; background-color: #2a5697; padding: 4px 6px; font-size: 23px">
+            <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
+            .get_permalink()); ?>" id="fb-floating-share" target="_blank">
+                <i class="fa fa-facebook-square"></i> Share
+            </a>
+        </div>
+    </div>
+<?php endif ?>

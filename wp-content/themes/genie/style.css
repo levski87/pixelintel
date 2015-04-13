@@ -200,3 +200,54 @@ All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
   border-radius: 40px;
 }
 }
+
+
+/* Facebook Share buttons */
+#footer-main {
+    z-index: 0;
+}
+
+.floating-share-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 15px;
+    background: rgba(241,243,243,0.8);
+    z-index: 3000;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-box-shadow: 0 -1px 7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 -1px 7px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0 -1px 7px rgba(0,0,0,0.5);
+    -o-box-shadow: 0 -1px 7px rgba(0,0,0,0.5);
+    box-shadow: 0 -1px 7px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 992px) {
+    .floating-share-bar {
+        left: 0;
+        margin-left: 0;
+    }
+}
+
+.fb-share-button {
+    border-radius: 5px;
+    background-color: #2a5697;
+    padding: 4px 6px;
+    font-size: 23px;
+    text-align: center;
+}
+.fb-share-button a {
+    color: #ffffff;
+}
+
+.fb-like-button {
+    border-radius: 5px;
+    background-color: rgb(42, 86, 151);
+    padding: 10px 6px;
+    min-height: 40px;
+    max-height: 40px;
+}
