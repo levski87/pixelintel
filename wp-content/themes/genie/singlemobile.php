@@ -364,6 +364,32 @@ if ( have_posts() ) {
 			$class_array = array( 'classic', 'btSingle' );
 		}
 		
+?>
+    <div class="contentID" style="text-align:center;">
+    <div id="contentad49382"></div>
+<script type="text/javascript">
+    (function() {
+        var params =
+        {
+            id: "3b1fd093-40eb-4845-927b-aa87c5def8a8",
+            d:  "cGl4ZWxpbnRlbC5jb20=",
+            wid: "49382",
+            cb: (new Date()).getTime()
+        };
+
+        var qs="";
+        for(var key in params){qs+=key+"="+params[key]+"&"}
+        qs=qs.substring(0,qs.length-1);
+        var s = document.createElement("script");
+        s.type= 'text/javascript';
+        s.src = "http://api.content.ad/Scripts/widget.aspx?" + qs;
+        s.async = true;
+        document.getElementById("contentad49382").appendChild(s);
+    })();
+</script>
+</div>
+
+<?php
 		
 		if ( comments_open() || get_comments_number() ) {
 			comments_template();
