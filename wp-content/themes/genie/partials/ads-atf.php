@@ -37,7 +37,7 @@
                 </div>
             </div>
     <?php // DESKTOP ADs ?>
-<?php elseif ($page <= $numpages) :?>
+<?php elseif ($page < $numpages) :?>
     <!-- Size: 728x90 -->
     <!-- leaderboard -->
     <div style="text-align: center;">
