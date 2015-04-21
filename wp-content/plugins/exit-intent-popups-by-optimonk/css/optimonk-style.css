@@ -1,0 +1,9 @@
+.help {
+    color: #5e5e5e;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.form-table td, .form-table th {
+    vertical-align: top;
+}
