@@ -16,7 +16,13 @@ All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
 
 
 .gutter {
-  width:85% !important;
+  width:1100 !important;
+}
+
+@media (max-width: 600px) {
+  .gutter {
+    width:85% !important;
+  }
 }
 
 .btLinkPages {
