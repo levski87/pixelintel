@@ -334,7 +334,7 @@ if ( have_posts() ) {
     </div>
 
 <?php $postid = get_the_ID(); 
-	if ($postid != 871 || $postid != 697): ?>
+	if ($postid != 871 && $postid != 697 ): ?>
 		<!-- 336x280 -->
 	 <div style="text-align: center;">
         <div style="display: inline-block;">
