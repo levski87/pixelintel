@@ -338,11 +338,15 @@ if ( have_posts() ) {
             <i class="fa fa-facebook-official"></i> Share on Facebook
         </a>
     </div>
-      <div style="text-align: center;">
+
+
+<?php $postid = get_the_ID(); 
+	if ($postid != 871 || $postid != 697): ?>
+		<!-- 336x280 -->
+	 <div style="text-align: center;">
         <div style="display: inline-block;">
             <div style="font-size: 12px;">Advertisement</div>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- 336x280 -->
 	<ins class="adsbygoogle"
      style="display:inline-block;width:336px;height:280px"
      data-ad-client="ca-pub-4049798989734696"
@@ -352,6 +356,9 @@ if ( have_posts() ) {
 </script>
 </div>
 </div>
+
+<?php endif; ?>
+
 
     <div class="contentID" style="text-align:center;">
     <div id="contentad49382"></div>
