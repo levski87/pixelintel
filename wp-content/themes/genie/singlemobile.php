@@ -437,6 +437,198 @@ if ($page > 2) : ?>
 function delayedpopModal_open(){if(document.getElementById("ac_49830")){var e=document.getElementById("ac_delayedModal-widgetcontent").innerHTML;delayedpopModal.open({content:e})}else setTimeout("delayedpopModal_open();",300)}var delayedpopModal=function(){var e,t,n={},d=document.createElement("div"),o=document.createElement("div"),i=document.createElement("div"),l=document.createElement("div"),c=document.createElement("div"),a={width:"auto",height:"auto",lock:!1,hideClose:!1,closeAfter:0,openCallback:function(){},closeCallback:!1,hideOverlay:!1};return n.open=function(s){e=function(){n.center()},l.innerHTML=s.content&&!s.ajaxContent?s.content:"",o.style.width=a.width,o.style.height=a.height,n.center(),(a.lock||a.hideClose)&&(c.style.visibility="hidden"),a.hideOverlay||(d.style.visibility="visible"),o.style.visibility="visible",document.onkeypress=function(e){27===e.keyCode&&a.lock!==!0&&n.close()},c&&(c.onclick=function(){return a.hideClose?!1:void n.close()}),d&&(d.onclick=function(){return a.lock?!1:void n.close()}),window.addEventListener?(window.addEventListener("resize",e,!1),window.addEventListener("gestureend",function(){window.setTimeout("delayedpopModal.center()",250)},!1),window.addEventListener("orientationchange",function(){window.setTimeout("delayedpopModal.center()",250)},!1)):window.attachEvent&&window.attachEvent("onresize",e),i.onmousedown=function(){return!1},a.closeAfter>0&&(t=window.setTimeout(function(){n.close()},1e3*a.closeAfter)),a.openCallback&&a.openCallback()},n.close=function(){l.innerHTML="",d.setAttribute("style",""),d.style.cssText="",d.style.visibility="hidden",o.setAttribute("style",""),o.style.cssText="",o.style.visibility="hidden",i.style.cursor="default",c.setAttribute("style",""),c.style.cssText="",t&&window.clearTimeout(t),a.closeCallback&&a.closeCallback(),window.removeEventListener?window.removeEventListener("resize",e,!1):window.detachEvent&&window.detachEvent("onresize",e)},n.widget=function(){var e={id:"1bec0dae-9c4b-4b7c-b572-b9a075c7d550",d:"cGl4ZWxpbnRlbC5jb20=",wid:"49830",cb:(new Date).getTime()},t="";for(var n in e)t+=n+"="+e[n]+"&";t=t.substring(0,t.length-1);var d=document.createElement("script");d.type="text/javascript",d.src="http://api.content.ad/Scripts/widget.aspx?"+t,d.async=!0,document.getElementById("contentad49830").appendChild(d)},n.center=function(){var e=document.createElement("div");e.style.visibility="hidden",e.style.width="100px",e.style.msOverflowStyle="scrollbar",document.body.appendChild(e);var t=e.offsetWidth;e.style.overflow="scroll";var n=document.createElement("div");n.style.width="100%",e.appendChild(n);var i=n.offsetWidth;e.parentNode.removeChild(e);var l=t-i,c=Math.max(window.innerHeight,document.documentElement.scrollHeight),a=Math.max(o.clientWidth,o.offsetWidth),s=Math.max(o.clientHeight,o.offsetHeight),r=0,u=0,m=0,y=0;"number"==typeof window.innerWidth?(r=window.innerWidth-l,u=window.innerHeight):document.documentElement&&document.documentElement.clientWidth&&(r=document.documentElement.clientWidth-l,u=document.documentElement.clientHeight),"number"==typeof window.pageYOffset?(y=window.pageYOffset,m=window.pageXOffset):document.body&&document.body.scrollLeft?(y=document.body.scrollTop,m=document.body.scrollLeft):document.documentElement&&document.documentElement.scrollLeft&&(y=document.documentElement.scrollTop,m=document.documentElement.scrollLeft),o.style.top=Math.max(0,u/2-s/2)+"px",o.style.left=Math.max(0,r/2-a/2)+"px",d.style.height=u+"px",d.style.width="100%",navigator.userAgent.match(/iPad/i)&&(o.style.position="absolute",o.style.top=y+u/2-s/2+"px",o.style.left=m+r/2-a/2+"px",d.style.height=c+"px")},d.setAttribute("id","ac_delayedModal-overlay"),o.setAttribute("id","ac_delayedModal-container"),i.setAttribute("id","ac_delayedModal-header"),l.setAttribute("id","ac_delayedModal-content"),c.setAttribute("id","ac_delayedModal-close"),i.appendChild(c),o.appendChild(i),o.appendChild(l),d.style.visibility="hidden",o.style.visibility="hidden",document.body.appendChild(d),document.body.appendChild(o),n}();setTimeout("delayedpopModal.widget();",179e3),setTimeout("delayedpopModal_open();",18e4);
 </script>
 
+<style>#ac_exitpopModal-widgetcontent{display:none}#ac_exitpopModal-overlay{background-color:rgba(0,0,0,.75);height:100%;left:0;position:fixed;top:0;width:100%;z-index:999999}#ac_exitpopModal-container,#ac_exitpopModal-container *{box-sizing:content-box}#ac_exitpopModal-container{position:fixed;width:50%!important;max-width:800px;background:#fff;border:1px solid #ababab;box-shadow:0 4px 16px rgba(0,0,0,.2);height:auto;padding:18px 14px 24px;font-family:arial,sans-serif;font-size:14px;z-index:1000000}@media (min-width:768px){#ac_exitpopModal-container{padding:18px 24px 24px}}#ac_exitpopModal-header{position:relative;float:right}#ac_exitpopModal-close{position:absolute;top:0;right:0;cursor:pointer;display:block;filter:alpha(opacity=60);-moz-opacity:.6;-webkit-opacity:.6;-ms-filter:alpha(opacity=60);opacity:.6}#ac_exitpopModal-close:before{content:"X";font-family:arial,sans-serif;font-size:20px;font-weight:400;font-style:normal}#ac_exitpopModal-close:hover{filter:alpha(opacity=100);-moz-opacity:1;-webkit-opacity:1;-ms-filter:alpha(opacity=100);opacity:1}#ac_exitpopModal-content{display:block;z-index:999;text-align:left;color:#333;font-family:arial,sans-serif;font-size:12px;background-color:#fff}
+</style>
+<div id="ac_exitpopModal-widgetcontent">
+<div id="contentad49830"></div>
+</div>
+    <script type="text/javascript">
+var exitpopModal = function() {
+    var method = {},
+        modalOverlay = document.createElement("div"),
+        modalContainer = document.createElement("div"),
+        modalHeader = document.createElement("div"),
+        modalContent = document.createElement("div"),
+        modalClose = document.createElement("div"),
+        centerModal, closeModalEvent, defaultSettings = {
+            width: "auto",
+            height: "auto",
+            lock: false,
+            hideClose: false,
+            closeAfter: 0,
+            openCallback: function() {},
+            closeCallback: false,
+            hideOverlay: false
+        };
+    method.open = function(parameters) {
+        centerModal = function() {
+            method.center()
+        };
+        if (parameters.content && !parameters.ajaxContent) modalContent.innerHTML = parameters.content;
+        else modalContent.innerHTML = "";
+        modalContainer.style.width = defaultSettings.width;
+        modalContainer.style.height = defaultSettings.height;
+        method.center();
+        if (defaultSettings.lock || defaultSettings.hideClose) modalClose.style.visibility = "hidden";
+        if (!defaultSettings.hideOverlay) modalOverlay.style.visibility = "visible";
+        modalContainer.style.visibility = "visible";
+        document.onkeypress = function(e) {
+            if (e.keyCode === 27 && defaultSettings.lock !==
+                true) method.close()
+        };
+        if (modalClose) modalClose.onclick = function() {
+            if (!defaultSettings.hideClose) method.close();
+            else return false
+        };
+        if (modalOverlay) modalOverlay.onclick = function() {
+            if (!defaultSettings.lock) method.close();
+            else return false
+        };
+        if (window.addEventListener) {
+            window.addEventListener("resize", centerModal, false);
+            window.addEventListener("gestureend", function() {
+                window.setTimeout("exitpopModal.center()", 250)
+            }, false);
+            window.addEventListener("orientationchange", function() {
+                window.setTimeout("exitpopModal.center()",
+                    250)
+            }, false)
+        } else if (window.attachEvent) window.attachEvent("onresize", centerModal);
+        modalHeader.onmousedown = function() {
+            return false
+        };
+        if (defaultSettings.closeAfter > 0) closeModalEvent = window.setTimeout(function() {
+            method.close()
+        }, defaultSettings.closeAfter * 1E3);
+        if (defaultSettings.openCallback) defaultSettings.openCallback()
+    };
+    method.close = function() {
+        modalContent.innerHTML = "";
+        modalOverlay.setAttribute("style", "");
+        modalOverlay.style.cssText = "";
+        modalOverlay.style.visibility = "hidden";
+        modalContainer.setAttribute("style",
+            "");
+        modalContainer.style.cssText = "";
+        modalContainer.style.visibility = "hidden";
+        modalHeader.style.cursor = "default";
+        modalClose.setAttribute("style", "");
+        modalClose.style.cssText = "";
+        if (closeModalEvent) window.clearTimeout(closeModalEvent);
+        if (defaultSettings.closeCallback) defaultSettings.closeCallback();
+        if (window.removeEventListener) window.removeEventListener("resize", centerModal, false);
+        else if (window.detachEvent) window.detachEvent("onresize", centerModal)
+    };
+    method.widget = function() {
+        var params = {
+            id: "1bec0dae-9c4b-4b7c-b572-b9a075c7d550",
+            d:  "cGl4ZWxpbnRlbC5jb20=",
+            wid: "49830",
+            cb: (new Date()).getTime()
+        };
+        var qs = "";
+        for (var key in params) qs += key + "=" + params[key] + "&";
+        qs = qs.substring(0, qs.length - 1);
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = "http://api.content.ad/Scripts/widget.aspx?" + qs;
+        s.async = true;
+        document.getElementById("contentad49830").appendChild(s)
+    };
+    method.center = function() {
+        var outer = document.createElement("div");
+        outer.style.visibility = "hidden";
+        outer.style.width = "100px";
+        outer.style.msOverflowStyle =
+            "scrollbar";
+        document.body.appendChild(outer);
+        var widthNoScroll = outer.offsetWidth;
+        outer.style.overflow = "scroll";
+        var inner = document.createElement("div");
+        inner.style.width = "100%";
+        outer.appendChild(inner);
+        var widthWithScroll = inner.offsetWidth;
+        outer.parentNode.removeChild(outer);
+        var scrollbarWidth = widthNoScroll - widthWithScroll;
+        var documentHeight = Math.max(window.innerHeight, document.documentElement.scrollHeight),
+            modalWidth = Math.max(modalContainer.clientWidth, modalContainer.offsetWidth),
+            modalHeight = Math.max(modalContainer.clientHeight,
+                modalContainer.offsetHeight),
+            browserWidth = 0,
+            browserHeight = 0,
+            amountScrolledX = 0,
+            amountScrolledY = 0;
+        if (typeof window.innerWidth === "number") {
+            browserWidth = window.innerWidth - scrollbarWidth;
+            browserHeight = window.innerHeight
+        } else if (document.documentElement && document.documentElement.clientWidth) {
+            browserWidth = document.documentElement.clientWidth - scrollbarWidth;
+            browserHeight = document.documentElement.clientHeight
+        }
+        if (typeof window.pageYOffset === "number") {
+            amountScrolledY = window.pageYOffset;
+            amountScrolledX = window.pageXOffset
+        } else if (document.body &&
+            document.body.scrollLeft) {
+            amountScrolledY = document.body.scrollTop;
+            amountScrolledX = document.body.scrollLeft
+        } else if (document.documentElement && document.documentElement.scrollLeft) {
+            amountScrolledY = document.documentElement.scrollTop;
+            amountScrolledX = document.documentElement.scrollLeft
+        }
+        modalContainer.style.top = Math.max(0, browserHeight / 2 - modalHeight / 2) + "px";
+        modalContainer.style.left = Math.max(0, browserWidth / 2 - modalWidth / 2) + "px";
+        modalOverlay.style.height = browserHeight + "px";
+        modalOverlay.style.width = "100%";
+        if (navigator.userAgent.match(/iPad/i)) {
+            modalContainer.style.position = "absolute";
+            modalContainer.style.top = amountScrolledY + browserHeight / 2 - modalHeight / 2 + "px";
+            modalContainer.style.left = amountScrolledX + browserWidth / 2 - modalWidth / 2 + "px";
+            modalOverlay.style.height = documentHeight + "px"
+        }
+    };
+    modalOverlay.setAttribute("id", "ac_exitpopModal-overlay");
+    modalContainer.setAttribute("id", "ac_exitpopModal-container");
+    modalHeader.setAttribute("id", "ac_exitpopModal-header");
+    modalContent.setAttribute("id", "ac_exitpopModal-content");
+    modalClose.setAttribute("id", "ac_exitpopModal-close");
+    modalHeader.appendChild(modalClose);
+    modalContainer.appendChild(modalHeader);
+    modalContainer.appendChild(modalContent);
+    modalOverlay.style.visibility = "hidden";
+    modalContainer.style.visibility = "hidden";
+    document.body.appendChild(modalOverlay);
+    document.body.appendChild(modalContainer);
+    return method
+}();
+
+function exitpopModal_open() {
+    if (document.getElementById("ac_49830")) {
+        var exitpopModalContent = document.getElementById("ac_exitpopModal-widgetcontent").innerHTML;
+        exitpopModal.open({
+            content: exitpopModalContent
+        })
+    } else setTimeout("exitpopModal_open();", 300)
+}
+var IE = document.all ? true : false;
+if (!IE) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = getMouseXY;
+var tempX = 0;
+var tempY = 0;
+
+function getMouseXY(e) {
+    tempX = e.pageX;
+    tempY = e.pageY;
+    if (tempX < 0) tempX = 0;
+    if (tempY < 0) tempY = 0;
+    if (tempY <= 20 && document.cookie.indexOf("exitpopped") == -1) {
+        exitpopModal.widget();
+        exitpopModal_open();
+        document.cookie = "exitpopped=1;max-age=" + 36E5 * 24 * 7
+    }
+};
+    </script>
+
 <?php
 global $bt_exclude_post;
 $bt_exclude_post = $post_id;
