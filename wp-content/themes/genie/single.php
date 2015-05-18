@@ -18,6 +18,8 @@ global $page, $pages, $numpages;
 /* User Agent */
 $userAgents = new Mobile_Detect();
 
+render_partial('partials/GoogleSurvey');
+
 if ($userAgents->isMobile()) {
 	include 'singlemobile.php';
 }
